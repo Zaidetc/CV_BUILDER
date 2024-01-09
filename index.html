@@ -1,0 +1,86 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Create Your Resume</h2>
+        <form action="direct.php" method="post">
+            <label for="full_name">Full Name:</label>
+            <input type="text" name="full_name" placeholder="Your Name" required>
+
+            <label for="role">Role:</label>
+            <input type="text" name="role" placeholder="E.g. Frontend Developer, Manual Tester, Fullstack Developer" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" maxlength="10" pattern="[0-9]{10}" placeholder="Please enter a 10-digit number" required>
+
+            <label for="address">Address:</label>
+            <input type="text" name="address" placeholder="Your Address" required>
+
+            <label for="linkedin_url">LinkedIn URL:</label>
+            <input type="text" name="linkedin_url" placeholder="LinkedIn URL" required>
+
+            <label for="graduation_degree">Graduation Degree:</label>
+            <input type="text" name="graduation_degree" placeholder="E.g. Bachelor Of Engineering in Computer Science " required>
+
+            <label for="university_name_graduation">University Name (Graduation):</label>
+            <input type="text" name="university_name_graduation" placeholder="E.g. RTMNU" required>
+
+            <label for="year_of_passing_graduation">Year of Passing (Graduation):</label>
+            <input type="number" name="year_of_passing_graduation" placeholder="E.g. 2023" required>
+
+            <label for="diploma">Diploma:</label>
+            <input type="text" name="diploma" placeholder="E.g.Diploma in Computer Science , Higher Secondary" required>
+
+            <label for="university_name_diploma">University Name (Diploma):</label>
+            <input type="text" name="university_name_diploma" placeholder="E.g. MSBTE" required>
+
+            <label for="year_of_passing_diploma">Year of Passing (Diploma):</label>
+            <input type="number" name="year_of_passing_diploma" placeholder="E.g. 2020" required>
+
+            <label for="skills">Skills:</label>
+            <input type="text" name="skills" placeholder="E.g. Html Css Java Php MySql React" required>
+
+            <label for="profile_summary">Profile Summary:</label>
+            <textarea name="profile_summary" rows="3" maxlength="210" placeholder="The profile section is a brief summary highlighting key qualifications, skills, and career goals, aiming to grab the reader's attention and offer a quick overview of your value proposition." required></textarea>
+
+            <h3>Project 1:</h3>
+            <label for="project1_name">Project Name:</label>
+            <input type="text" name="project1_name" placeholder="Title Of Project" required>
+
+            <label for="project1_description">Project Description:</label>
+            <textarea name="project1_description" rows="3" maxlength="235" placeholder="Brief Description Of Project" required></textarea>
+
+            <label for="project1_role">Role:</label>
+            <input type="text" name="project1_role" placeholder="Your Role In Project" required>
+
+            <label for="project1_tool">Tool:</label>
+            <input type="text" name="project1_tool" placeholder="E.g. Html Css Javasript Java" required>
+
+            <h3>Project 2:</h3>
+            <label for="project2_name">Project Name:</label>
+            <input type="text" name="project2_name" placeholder="Title Of Project" required>
+
+            <label for="project2_description">Project Description:</label>
+            <textarea name="project2_description" rows="3" maxlength="260" placeholder="Brief Description Of Project" required></textarea>
+
+            <label for="project2_role">Role:</label>
+            <input type="text" name="project2_role" placeholder="Your Role In Project" required>
+
+            <label for="project2_tool">Tool:</label>
+            <input type="text" name="project2_tool" placeholder="E.g. Html Css Javasript Mysql" required>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+</body>
+</html>
